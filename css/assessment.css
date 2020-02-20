@@ -1,0 +1,52 @@
+body {
+    background-image: url(../images/background.jpeg);
+}
+
+
+
+h1 {
+    color: black;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+img {
+    width: 125px;
+    min-height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mystuff {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+div {
+    padding: 25px;
+    margin: 5px;
+}
+
+@media screen and (min-width: 800px) {
+
+    #mystuff {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+
+    }
+
+    div:nth-child(2n+1) {
+        border-style: solid;
+        border-width: thin;
+        padding: 35px;
+    }
+
+    div:nth-child(2n+0) {
+        padding: 35px;
+    }
+
+}
